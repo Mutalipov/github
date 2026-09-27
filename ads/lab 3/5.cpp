@@ -19,13 +19,13 @@ int main(){
         cin>>l1>>r1>>l2>>r2;
         long long c1=0,c2=0,c_int=0;
         if(l1<=r1){
-            auto it1 = lower_bound(v.begin(),v.end(),l2);
-            auto it2 = lower_bound(v.begin(),v.end(),r2);
+            auto it1 = lower_bound(v.begin(),v.end(),l1);
+            auto it2 = upper_bound(v.begin(),v.end(),r1);
             c1 = distance(it1,it2);
         }
         if(l2<=r2){
             auto it1 = lower_bound(v.begin(),v.end(),l2);
-            auto it2 = lower_bound(v.begin(),v.end(),r2);
+            auto it2 = upper_bound(v.begin(),v.end(),r2);
             c2 = distance(it1,it2);
         }
         int l_int = max(l1,l2);
