@@ -68,5 +68,5 @@ int main(){
         bst.insert(x);
     }
 
-    cout<<bst.getcount()<<"\n";
+    cout<<bst.getcount()<<endl;
 }
